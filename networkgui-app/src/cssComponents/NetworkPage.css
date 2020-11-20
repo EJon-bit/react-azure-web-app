@@ -1,0 +1,48 @@
+.ant-tabs-top > .ant-tabs-nav,
+.ant-tabs-bottom > .ant-tabs-nav,
+.ant-tabs-top > div > .ant-tabs-nav,
+.ant-tabs-bottom > div > .ant-tabs-nav {
+  margin: 0 0 0px 0;
+  
+}
+
+
+.card-container {
+    padding-left: 10px;
+    padding-right: 10px;  
+    padding-bottom: 10px;
+    padding-top:10px;  
+    background: #141414;
+  }
+
+.card-container p {
+    margin: 0;
+    
+  }
+  .card-container > .ant-tabs-card .ant-tabs-content {
+    height: 92vh;
+    
+  }
+  .card-container > .ant-tabs-card .ant-tabs-content > .ant-tabs-tabpane {    
+    padding: 16px;
+  }
+  .card-container > .ant-tabs-card > .ant-tabs-nav::before {
+    display: none;
+  }
+  
+  .card-container > .ant-tabs-card .ant-tabs-tab {
+    border-color: transparent;
+    background: transparent;
+    color:#fff
+  }
+  
+  .card-container > .ant-tabs-card .ant-tabs-content > .ant-tabs-tabpane {
+    background: #2e2d2d;
+    color: #888585;
+    opacity:0.75;
+  }
+  .card-container > .ant-tabs-card .ant-tabs-tab-active {    
+    border-color: #141414;
+    background: #2e2d2d;
+    opacity:0.75;
+  }
