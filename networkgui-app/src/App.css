@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  
 }
 
 .App-logo {
@@ -37,11 +38,14 @@
   }
 }
 
-.site-layout>div{
+.site-layout>div#routesContainer{
   padding-top: 24px;
   padding-left: 50px;
   padding-right: 50px;
+  background-color: #282c34;
+
 }
+
 .site-layout .site-layout-background {
   background: rgb(43, 42, 42);
   

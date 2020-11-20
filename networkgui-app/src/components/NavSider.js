@@ -48,11 +48,9 @@ class SiderNav extends React.Component {
             </Menu.Item>
            
             <SubMenu key="sub2" icon={<UserOutlined />} title="Tools & Jobs">
-              <Menu.Item key="3"> <NavLink to="/createJob">Create Job</NavLink> </Menu.Item>
-              <Menu.Item key="4"> Batch Service Request</Menu.Item>
-              <Menu.Item key="5">Schedule Jobs</Menu.Item>
-              <Menu.Item key="5">Submitted Jobs</Menu.Item>
-              <Menu.Item key="5">Current Jobs</Menu.Item>
+              <Menu.Item key="6"> <NavLink to="/createJob">Create Job</NavLink> </Menu.Item>              
+              <Menu.Item key="9">Submitted Jobs</Menu.Item>
+              <Menu.Item key="10">Current Jobs</Menu.Item>
             </SubMenu>
             
             <Menu.Item key="9" icon={<FileOutlined />}>

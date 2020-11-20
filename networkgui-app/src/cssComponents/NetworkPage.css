@@ -2,18 +2,18 @@
 .ant-tabs-bottom > .ant-tabs-nav,
 .ant-tabs-top > div > .ant-tabs-nav,
 .ant-tabs-bottom > div > .ant-tabs-nav {
-  margin: 0 0 0px 0;
+  margin: 0 0 24px 0;
   
 }
 
 
-.card-container {
+/* .card-container {
     padding-left: 10px;
     padding-right: 10px;  
     padding-bottom: 10px;
     padding-top:10px;  
     background: #141414;
-  }
+  } */
 
 .card-container p {
     margin: 0;
@@ -37,12 +37,11 @@
   }
   
   .card-container > .ant-tabs-card .ant-tabs-content > .ant-tabs-tabpane {
-    background: #2e2d2d;
+    background: #1d1c1c;
     color: #888585;
     opacity:0.75;
   }
-  .card-container > .ant-tabs-card .ant-tabs-tab-active {    
-    border-color: #141414;
-    background: #2e2d2d;
+  .card-container > .ant-tabs-card .ant-tabs-tab-active {      
+    background: #1d1c1c;
     opacity:0.75;
   }
