@@ -5,15 +5,23 @@ import SiderNav from './components/NavSider';
 import { BrowserRouter as Router } from 'react-router-dom';
 import {Layout} from 'antd';
 
+const {Header}= Layout;
+
 class App extends React.Component {
   render(){
     return (
       <Router>
         <div className="App">
-          <Layout style={{ minHeight: '100vh' }}>
+          <Layout style={{ minHeight: '100vh' }}>            
             <SiderNav/>
             <Layout className="site-layout">
-              <Routes/>
+              <Header>
+                
+              </Header>
+              <div>
+                <Routes/>
+              </div>              
+              
             </Layout>
             
           </Layout>

@@ -37,6 +37,12 @@
   }
 }
 
+.site-layout>div{
+  padding-top: 24px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
 .site-layout .site-layout-background {
   background: rgb(43, 42, 42);
+  
 }

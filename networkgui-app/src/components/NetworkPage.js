@@ -9,15 +9,15 @@ class NetworkPage extends React.Component{
         return(
             <div className="card-container">
                 <Tabs tabPosition="bottom" type="card">
-                <TabPane tab="Tab Title 1" key="1">
-                  
-                </TabPane>
-                <TabPane tab="Tab Title 2" key="2">
-                   
-                </TabPane>
-                <TabPane tab="Tab Title 3" key="3">
-                   
-                </TabPane>
+                    <TabPane tab="Tab Title 1" key="1">
+                    
+                    </TabPane>
+                    <TabPane tab="Tab Title 2" key="2">
+                    
+                    </TabPane>
+                    <TabPane tab="Tab Title 3" key="3">
+                    
+                    </TabPane>
                 </Tabs>
             </div>
         );

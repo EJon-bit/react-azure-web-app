@@ -34,21 +34,37 @@ class SiderNav extends React.Component {
             <Menu.Item key="1" icon={<PieChartOutlined />}>
               <NavLink to="/notices">Notifications</NavLink>
             </Menu.Item>
-            <Menu.Item key="2" icon={<DesktopOutlined />}>
-              <NavLink to="/config">Configurations</NavLink>
+
+            <SubMenu key="sub1" icon={<UserOutlined />} title="Available Operations">
+              <Menu.Item key="3"> <NavLink to="/operation1">Operation 1</NavLink> </Menu.Item>
+              <Menu.Item key="4"> Operation 2</Menu.Item>
+              <Menu.Item key="5">Operation 3</Menu.Item>
+              {/* <Menu.Item key="5">Submitted Jobs</Menu.Item>
+              <Menu.Item key="5">Current Jobs</Menu.Item> */}
+            </SubMenu>
+
+            <Menu.Item key="10" icon={<FileOutlined />}>
+            <NavLink to="/PopLinks">Popular Links</NavLink>
             </Menu.Item>
-            <SubMenu key="sub1" icon={<UserOutlined />} title="Tools">
-              <Menu.Item key="3"> <NavLink to="/createRequest">Create Request</NavLink> </Menu.Item>
+           
+            <SubMenu key="sub2" icon={<UserOutlined />} title="Tools & Jobs">
+              <Menu.Item key="3"> <NavLink to="/createJob">Create Job</NavLink> </Menu.Item>
               <Menu.Item key="4"> Batch Service Request</Menu.Item>
               <Menu.Item key="5">Schedule Jobs</Menu.Item>
               <Menu.Item key="5">Submitted Jobs</Menu.Item>
               <Menu.Item key="5">Current Jobs</Menu.Item>
             </SubMenu>
-            <Menu.Item key="9" icon={<FileOutlined />}>
-              Popular Links
-            </Menu.Item>
+            
             <Menu.Item key="9" icon={<FileOutlined />}>
               Tariff Simulation Testing
+            </Menu.Item>
+
+            <Menu.Item key="11" icon={<DesktopOutlined />}>
+              <NavLink to="/network">Network Diagram</NavLink>
+            </Menu.Item>
+
+            <Menu.Item key="2" icon={<DesktopOutlined />}>
+              <NavLink to="/config">Configurations</NavLink>
             </Menu.Item>
           </Menu>
         </Sider>      
