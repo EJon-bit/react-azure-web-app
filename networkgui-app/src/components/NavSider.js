@@ -36,32 +36,32 @@ class SiderNav extends React.Component {
             </Menu.Item>
 
             <SubMenu key="sub1" icon={<UserOutlined />} title="Available Operations">
-              <Menu.Item key="3"> <NavLink to="/operation1">Operation 1</NavLink> </Menu.Item>
-              <Menu.Item key="4"> Operation 2</Menu.Item>
-              <Menu.Item key="5">Operation 3</Menu.Item>
+              <Menu.Item key="2"> <NavLink to="/operation1">Operation 1</NavLink> </Menu.Item>
+              <Menu.Item key="3"> Operation 2</Menu.Item>
+              <Menu.Item key="4">Operation 3</Menu.Item>
               {/* <Menu.Item key="5">Submitted Jobs</Menu.Item>
               <Menu.Item key="5">Current Jobs</Menu.Item> */}
             </SubMenu>
 
-            <Menu.Item key="10" icon={<FileOutlined />}>
+            <Menu.Item key="5" icon={<FileOutlined />}>
             <NavLink to="/PopLinks">Popular Links</NavLink>
             </Menu.Item>
            
             <SubMenu key="sub2" icon={<UserOutlined />} title="Tools & Jobs">
               <Menu.Item key="6"> <NavLink to="/createJob">Create Job</NavLink> </Menu.Item>              
-              <Menu.Item key="9">Submitted Jobs</Menu.Item>
-              <Menu.Item key="10">Current Jobs</Menu.Item>
+              <Menu.Item key="7"><NavLink to="/jobsSubmitted">Submitted Jobs</NavLink></Menu.Item>
+              <Menu.Item key="8"><NavLink to="/currentJobs">Current Jobs</NavLink></Menu.Item>
             </SubMenu>
             
             <Menu.Item key="9" icon={<FileOutlined />}>
               Tariff Simulation Testing
             </Menu.Item>
 
-            <Menu.Item key="11" icon={<DesktopOutlined />}>
+            <Menu.Item key="10" icon={<DesktopOutlined />}>
               <NavLink to="/network">Network Diagram</NavLink>
             </Menu.Item>
 
-            <Menu.Item key="2" icon={<DesktopOutlined />}>
+            <Menu.Item key="11" icon={<DesktopOutlined />}>
               <NavLink to="/config">Configurations</NavLink>
             </Menu.Item>
           </Menu>

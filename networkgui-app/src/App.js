@@ -12,7 +12,7 @@ class App extends React.Component {
     return (
       <Router>
         <div className="App">
-          <Layout style={{ minHeight: '100vh' }}>            
+          <Layout id='appContainer'>            
             <SiderNav/>
             <Layout className="site-layout">
               <Header>

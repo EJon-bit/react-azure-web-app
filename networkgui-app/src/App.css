@@ -38,12 +38,16 @@
   }
 }
 
-.site-layout>div#routesContainer{
+.ant-layout#appContainer{
+  min-height: 100vh;
+}
+.site-layout>div#routesContainer{ 
+  min-height: 100vh; 
   padding-top: 24px;
   padding-left: 50px;
   padding-right: 50px;
   background-color: #282c34;
-
+ 
 }
 
 .site-layout .site-layout-background {

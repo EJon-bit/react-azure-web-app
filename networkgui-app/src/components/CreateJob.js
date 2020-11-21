@@ -8,7 +8,7 @@ class CreateRequest extends React.Component{
         return(
             <div>
                 <Card>
-                    <Form>                    
+                    <Form layout="vertical" requiredMark={'hidden'}>                    
                         <Row gutter={[24,35]}>
                             <Col span={12}>                        
                                 <Form.Item 
@@ -26,13 +26,7 @@ class CreateRequest extends React.Component{
                             <Col span={12}>
                                 <Form.Item 
                                     name={'sumbissionDate'} 
-                                    label={'Submission Date'} 
-                                    rules={[
-                                        {
-                                            required: true,
-                                            message: 'This field is required!',
-                                        },
-                                    ]}>
+                                    label={'Submission Date'}>                                   
                                     <Input placeholder="placeholder" />
                                 </Form.Item>
                             </Col>
