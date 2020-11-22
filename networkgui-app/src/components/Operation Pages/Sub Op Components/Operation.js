@@ -1,8 +1,8 @@
 import React from 'react';
 import {Row, Col} from 'antd';
 import 'antd/dist/antd.css';
-import '../../cssComponents/operations.css'
-import ActivityTable from './Sub Op Components/ActivityTable'
+import '../../../cssComponents/operations.css'
+import ActivityTable from './ActivityTable'
 import {Card} from 'antd';
 
 

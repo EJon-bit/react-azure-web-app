@@ -54,3 +54,11 @@
   background: rgb(43, 42, 42);
   
 }
+
+.ant-layout-header {
+  height: 64px;
+  padding: 0 50px;
+  color: rgba(243, 231, 231, 0.85);
+  line-height: 64px;
+  background: #f05449b2;
+}

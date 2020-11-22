@@ -1,25 +1,23 @@
 import React from 'react';
 import 'antd/dist/antd.css';
-import { Card, Form, Row, Col, Input, Select, Button } from 'antd';
+import '../cssComponents/CreateJob.css'
+import { Card, Form, Row, Col, Input, Select, Button, DatePicker } from 'antd';
 const { Option } = Select;
 
 class CreateRequest extends React.Component{
     render(){
         return(
             <div>
-                <Card>
+                <Card title="Job Request Form">
                     <Form layout="vertical" requiredMark={'hidden'}>                    
-                        <Row gutter={[24,35]}>
+                        <Row gutter={[200,35]}>
                             <Col span={12}>                        
                                 <Form.Item 
                                     name={'job'} 
                                     label={'Job Name'} 
-                                    rules={[
-                                        {
-                                            required: true,
-                                            message: 'This field is required!',
-                                        },
-                                    ]}>
+                                    validateStatus="warning"
+                                    // 
+                                    >
                                     <Input placeholder="placeholder" />
                                 </Form.Item>
                             </Col>
@@ -27,27 +25,23 @@ class CreateRequest extends React.Component{
                                 <Form.Item 
                                     name={'sumbissionDate'} 
                                     label={'Submission Date'}>                                   
-                                    <Input placeholder="placeholder" />
+                                    <DatePicker showTime />
                                 </Form.Item>
                             </Col>
                             <Col span={12}>
                                 <Form.Item 
                                     name={'scheduleDate'} 
-                                    label={'Scheduled Date'}>
-                                    
-                                    <Input placeholder="placeholder" />
+                                    label={'Scheduled Date'}>                                    
+                                    <DatePicker showTime />                                    
                                 </Form.Item>
                             </Col>
                             <Col span={12}>    
                                 <Form.Item 
                                     name={'reqTitle'} 
                                     label={'Request Title'} 
-                                    rules={[
-                                        {
-                                            required: true,
-                                            message: 'This field is required!',
-                                        },
-                                    ]}>
+                                    validateStatus="warning"
+                                    // 
+                                    >
                                     <Input placeholder="placeholder"/>
                                 </Form.Item>
                             </Col>
@@ -55,12 +49,9 @@ class CreateRequest extends React.Component{
                                 <Form.Item 
                                 name={'reqSource'} 
                                 label={'Request Source'} 
-                                rules={[
-                                    {
-                                        required: true,
-                                        message: 'This field is required!',
-                                    },
-                                ]}>
+                                // 
+                                validateStatus="warning"
+                                >
                                 <Input placeholder="placeholder"/>
                             </Form.Item>
                             </Col>
@@ -68,12 +59,9 @@ class CreateRequest extends React.Component{
                                 <Form.Item
                                     name="reqType"
                                     label="Request Type"
-                                    rules={[
-                                        {
-                                            required: true,
-                                            message:'Must choose a Request Type'
-                                        },
-                                    ]}>
+                                    validateStatus="warning"
+                                    // 
+                                    >
                                     <Select placeholder="Select the type of request" allowClear>
                                         <Option value="male">male</Option>
                                         <Option value="female">female</Option>
@@ -85,12 +73,14 @@ class CreateRequest extends React.Component{
                                 <Form.Item
                                     name="reqProps"
                                     label="Request Properties"
-                                    rules={[
-                                        {
-                                            required: true,
-                                            message:'Must choose a File to Attach'
-                                        },
-                                    ]} >
+                                    validateStatus="warning"
+                                    // rules={[
+                                    //     {
+                                    //         required: true,
+                                    //         message:'Must choose a File to Attach'
+                                    //     },
+                                    // ]}
+                                    >
                                     <Select placeholder="Select Additional Properties" allowClear>
                                         <Option value="male">male</Option>
                                         <Option value="female">female</Option>
@@ -102,12 +92,9 @@ class CreateRequest extends React.Component{
                                 <Form.Item
                                     name="attachments"
                                     label="File Attachments"
-                                    rules={[
-                                        {
-                                            required: true,
-                                            message:'Must choose a File to Attach'
-                                        },
-                                    ]} >
+                                    validateStatus="warning"
+                                    // 
+                                    >
                                     <Select placeholder="Select a File" allowClear>
                                         <Option value="male">male</Option>
                                         <Option value="female">female</Option>

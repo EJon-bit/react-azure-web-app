@@ -1,3 +1,52 @@
 .ant-alert{
     margin-bottom: 24px;
+} 
+
+.ant-card {      
+    font-size: 14px;
+    font-variant: tabular-nums;
+    line-height: 1.5715; 
+    background: rgba(136, 131, 131, 0.318);
+    border-radius: 8px;
+    border-color:rgba(53, 50, 50, 0.849);  
+    border-width: 2px;  
+}
+
+.ant-card-head {   
+    color: rgba(211, 8, 8, 0.952);
+    font-weight: 500;
+    font-size: 20px;   
+}
+
+.ant-alert {   
+    color: rgba(0, 0, 0, 0.85);
+    font-size: 14px;   
+    border-radius: 8px;
+}
+
+.ant-alert-success {
+    background-color: #e4f8d1ad;
+    border: 1px solid #b7eb8f; 
+    color: #036931; 
+}
+  
+.ant-alert-info {
+    background-color: #cbebfa98;
+    border: 1px solid #91d5ff;
+    color: #064268;
+
+}
+
+.ant-alert-warning {
+background-color: #fceb987c;
+border: 1px solid #ffe58f;
+color: #3a3902;
+
+}
+
+.ant-alert-error {
+background-color: #f8ada19f;
+border: 1px solid #f89289;
+color: #3f0c03;
+
 }
