@@ -6,7 +6,7 @@
     font-size: 14px;
     font-variant: tabular-nums;
     line-height: 1.5715; 
-    background: rgba(136, 131, 131, 0.318);
+    background: rgba(29, 29, 31, 0.959);
     border-radius: 8px;
     border-color:rgba(53, 50, 50, 0.849);  
     border-width: 2px;  
@@ -25,27 +25,27 @@
 }
 
 .ant-alert-success {
-    background-color: #e4f8d1ad;
+    background-color: #e4f8d1a1;
     border: 1px solid #b7eb8f; 
     color: #036931; 
 }
   
 .ant-alert-info {
-    background-color: #cbebfa98;
+    background-color: #cbebfaa9;
     border: 1px solid #91d5ff;
     color: #064268;
 
 }
 
 .ant-alert-warning {
-background-color: #fceb987c;
+background-color: #fceb989c;
 border: 1px solid #ffe58f;
 color: #3a3902;
 
 }
 
 .ant-alert-error {
-background-color: #f8ada19f;
+background-color: #f8ada19a;
 border: 1px solid #f89289;
 color: #3f0c03;
 

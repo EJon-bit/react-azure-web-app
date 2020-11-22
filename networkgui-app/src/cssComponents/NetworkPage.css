@@ -37,11 +37,11 @@
   }
   
   .card-container > .ant-tabs-card .ant-tabs-content > .ant-tabs-tabpane {
-    background: #1d1c1c;
+    background: #1d1c1cfb;
     color: #888585;
-    opacity:0.75;
+    
   }
   .card-container > .ant-tabs-card .ant-tabs-tab-active {      
-    background: #1d1c1c;
-    opacity:0.75;
+    background: #1d1c1cfb;
+   
   }
