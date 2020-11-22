@@ -15,6 +15,7 @@ class CreateRequest extends React.Component{
                                 <Form.Item 
                                     name={'job'} 
                                     label={'Job Name'} 
+                                    hasFeedback
                                     validateStatus="warning"
                                     // 
                                     >

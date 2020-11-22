@@ -1,0 +1,20 @@
+.ant-form label {
+    font-size: 14px;
+    color: blanchedalmond;
+    font-weight: 500;
+}
+
+.ant-form-item .ant-input, .ant-form-item .ant-input:hover, .ant-form-item .ant-calendar-picker-input{
+    background-color: rgba(14, 13, 13, 0.815);
+}
+
+
+.ant-form-item .ant-select:not(.ant-select-disabled):not(.ant-select-customize-input) .ant-select-selector {
+    background-color: rgba(14, 13, 13, 0.815);   
+}
+
+.ant-form-item .ant-picker {
+    width: 100%;
+    background-color: rgba(14, 13, 13, 0.815);
+}
+
