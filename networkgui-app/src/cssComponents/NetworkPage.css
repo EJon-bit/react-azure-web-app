@@ -2,8 +2,7 @@
 .ant-tabs-bottom > .ant-tabs-nav,
 .ant-tabs-top > div > .ant-tabs-nav,
 .ant-tabs-bottom > div > .ant-tabs-nav {
-  margin: 0 0 24px 0;
-  
+  margin: 0 0 24px 0;  
 }
 
 
@@ -20,8 +19,7 @@
     
   }
   .card-container > .ant-tabs-card .ant-tabs-content {
-    height: 92vh;
-    
+    height: 92vh;    
   }
   .card-container > .ant-tabs-card .ant-tabs-content > .ant-tabs-tabpane {    
     padding: 16px;
@@ -38,10 +36,8 @@
   
   .card-container > .ant-tabs-card .ant-tabs-content > .ant-tabs-tabpane {
     background: #1d1c1cfb;
-    color: #888585;
-    
+    color: #888585;    
   }
   .card-container > .ant-tabs-card .ant-tabs-tab-active {      
-    background: #1d1c1cfb;
-   
+    background: #1d1c1cfb;   
   }
