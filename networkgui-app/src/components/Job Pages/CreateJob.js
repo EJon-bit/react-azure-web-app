@@ -1,6 +1,6 @@
 import React from 'react';
 import 'antd/dist/antd.css';
-import '../cssComponents/CreateJob.css'
+import '../../cssComponents/CreateJob.css'
 import { Card, Form, Row, Col, Input, Select, Button, DatePicker } from 'antd';
 const { Option } = Select;
 

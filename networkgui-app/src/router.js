@@ -3,11 +3,11 @@ import HomePage from './components/HomePage';
 import Notifications from './components/Notifications';
 import PopularLinks from './components/PopularLinks'
 import Configurations from './components/Configurations';
-import CreateJob from './components/CreateJob';
+import CreateJob from './components/Job Pages/CreateJob';
 import Operation1 from './components/Operation Pages/Operation1'
 import NetworkPage from './components/NetworkPage';
-import SubmittedJobs from './components/SubmittedJobs';
-import CurrentJobs from './components/CurrentJobs';
+import SubmittedJobs from './components/Job Pages/SubmittedJobs';
+import CurrentJobs from './components/Job Pages/CurrentJobs';
 
 import {Switch, Route} from 'react-router-dom';
 

@@ -1,7 +1,7 @@
 import React from 'react';
 import 'antd/dist/antd.css';
 import {Card, Col, Row} from 'antd';
-import '../cssComponents/CurrentJobs.scoped.css'
+import '../../cssComponents/CurrentJobs.scoped.css'
 
 class CurrentJobs extends React.Component{
     render(){
