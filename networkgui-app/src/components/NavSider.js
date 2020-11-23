@@ -2,7 +2,7 @@ import React from 'react';
 import {NavLink} from 'react-router-dom';
 import '../../node_modules/antd/dist/antd.css';
 import '../cssComponents/Sider.css';
-import {Layout, Menu} from 'antd';
+import {Layout, Menu, Badge} from 'antd';
 import {
   DesktopOutlined,
   PieChartOutlined,
@@ -31,8 +31,10 @@ class SiderNav extends React.Component {
             <NavLink to="/">Vas Ops</NavLink> 
           </div>
           <Menu theme="dark" defaultSelectedKeys={['1']} mode="inline">
-            <Menu.Item key="1" icon={<PieChartOutlined />}>
-              <NavLink to="/notices">Notifications</NavLink>
+            <Menu.Item key="1" icon={<PieChartOutlined><Badge size="small" count={5} offset={[-2, -10]}/></PieChartOutlined>}>              
+              <NavLink to="/notices">                              
+                Notifications
+              </NavLink>
             </Menu.Item>
 
             <SubMenu key="sub1" icon={<UserOutlined />} title="Available Operations">

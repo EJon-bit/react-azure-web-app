@@ -2,13 +2,13 @@
     margin-bottom: 24px;
 } 
 
-.ant-card {      
+.ant-card{      
     font-size: 14px;
     font-variant: tabular-nums;
-    line-height: 1.5715; 
+    line-height: 1.5715;  
     background: rgba(29, 29, 31, 0.959);
     border-radius: 8px;
-    border-color:rgba(53, 50, 50, 0.849);  
+    border-color: rgba(29, 29, 31, 0.959);  
     border-width: 2px;  
 }
 

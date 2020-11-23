@@ -1,0 +1,17 @@
+.ant-card{      
+    font-size: 14px;
+    font-variant: tabular-nums;
+    line-height: 1.5715;  
+    background: rgba(29, 29, 31, 0.959);
+    border-radius: 8px;
+    border-color:rgba(29, 29, 31, 0.959);   
+    border-width: 2px;  
+}
+
+.ant-card#JobCard{
+    
+    background: rgba(116, 115, 119, 0.671);
+    border-radius: 8px;
+    border-color:rgba(29, 29, 31, 0.726);   
+    border-width: 2px;  
+}

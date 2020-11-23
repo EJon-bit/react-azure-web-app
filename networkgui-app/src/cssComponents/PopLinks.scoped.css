@@ -1,0 +1,28 @@
+.ant-card{      
+    font-size: 14px;
+    font-variant: tabular-nums;
+    line-height: 1.5715;  
+    background: rgba(29, 29, 31, 0.959);
+    border-radius: 8px;
+    border-color:rgba(29, 29, 31, 0.959);   
+    border-width: 2px;  
+}
+
+.ant-card-head {   
+    color: rgba(174, 196, 245, 0.952);
+    font-weight: 500;
+    font-size: 20px;   
+}
+
+.ant-card#AppCard{    
+    background: rgba(116, 115, 119, 0.671);
+    border-radius: 8px;
+    border-color:rgba(29, 29, 31, 0.726);   
+    border-width: 2px;  
+}
+
+.ant-card#AppCard .ant-card-head {   
+    color: rgba(234, 232, 247, 0.952);
+    font-weight: 500;
+    font-size: 20px;   
+}

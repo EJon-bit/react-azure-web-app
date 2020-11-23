@@ -1,6 +1,7 @@
 import React from 'react';
 import 'antd/dist/antd.css';
-import{Card, Row, Col} from 'antd';
+import {Card, Row, Col} from 'antd';
+import '../cssComponents/PopLinks.scoped.css';
 
 
 class PopularLinks extends React.Component{
@@ -10,19 +11,19 @@ class PopularLinks extends React.Component{
                 <Card title="Frequently Visited Network Apps">
                     <Row gutter={30}>
                         <Col flex={5}> 
-                            <Card title="App Name">
+                            <Card id="AppCard" title="App Name">
                                 Value
                             </Card>
                         </Col>
 
                         <Col flex={5}> 
-                            <Card title="App Name">
+                            <Card id="AppCard" title="App Name">
                                 Value
                             </Card>
                         </Col>
 
                         <Col flex={5}> 
-                            <Card title="App Name">
+                            <Card id="AppCard" title="App Name">
                                 Value
                             </Card>
                         </Col>
