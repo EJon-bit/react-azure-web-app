@@ -50,3 +50,7 @@ border: 1px solid #f89289;
 color: #3f0c03;
 
 }
+
+.ant-row#buttonRow> button{
+    justify-content: center;
+}

@@ -2,7 +2,7 @@ import React from 'react';
 import {NavLink} from 'react-router-dom';
 import '../../node_modules/antd/dist/antd.css';
 import '../cssComponents/Sider.css';
-import {Layout, Menu, Badge} from 'antd';
+import {Layout, Input, Menu, Badge} from 'antd';
 import {
   DesktopOutlined,
   PieChartOutlined,
@@ -12,6 +12,9 @@ import {
 
 const {Sider} = Layout;
 const { SubMenu } = Menu;
+const {Search}=Input;
+
+const onSearch = value => console.log(value);
 
 class SiderNav extends React.Component {
   state = {
@@ -23,6 +26,8 @@ class SiderNav extends React.Component {
     this.setState({ collapsed });
   };
 
+  
+
   render() {
     const { collapsed } = this.state;
     return (      
@@ -30,6 +35,7 @@ class SiderNav extends React.Component {
           <div className="logo"> 
             <NavLink to="/">Vas Ops</NavLink> 
           </div>
+          <Search placeholder="input search text" onSearch={onSearch} enterButton />
           <Menu theme="dark" defaultSelectedKeys={['1']} mode="inline">
             <Menu.Item key="1" icon={<PieChartOutlined><Badge size="small" count={5} offset={[-2, -10]}/></PieChartOutlined>}>              
               <NavLink to="/notices">                              

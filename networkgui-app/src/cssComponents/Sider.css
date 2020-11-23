@@ -29,4 +29,19 @@
   border-top-right-radius: 8px;
 }
 
+.ant-input-search > .ant-input-group > .ant-input-group-addon .ant-input-search-button {
+  border-radius: 0 0px 0px 0;
+}
+
+.ant-input-search .ant-input:hover,
+.ant-input-search .ant-input:focus {
+  border-color: #0c0c0c0a;
+  
+}
+
+.ant-input-search > .ant-input-group{  
+  margin-top: 10px;
+  margin-bottom: 25px;
+}
+
 
