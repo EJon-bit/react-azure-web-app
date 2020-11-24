@@ -1,0 +1,50 @@
+.ant-card#SystemCard{    
+    background: rgba(72, 72, 77, 0.877);
+    border-radius: 8px;
+    border-color:rgba(29, 29, 31, 0.726);   
+    border-width: 2px;  
+}
+
+.ant-card#SystemCard .ant-card-head {   
+    color: rgba(234, 232, 247, 0.952);
+    font-weight: 500;
+    font-size: 20px;   
+}
+
+.ant-card#opCard{    
+    background: rgba(56, 56, 75, 0.822);
+    border-radius: 8px;
+    border-color:rgba(44, 44, 68, 0.801);   
+    border-width: 2px;  
+    color: blanchedalmond;
+    font-weight: normal;
+    margin-bottom: 15px;
+}
+
+.ant-card#SystemCard .ant-card-actions {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background: rgb(45, 51, 71);
+    border-top: 1px solid #1c212c;
+    /* border-bottom: 1px solid #1c212c;
+    border-left: 2px solid #1c212c; */
+    border-radius: 0px 0px 8px 8px ;
+  }
+
+  .ant-card#SystemCard .ant-card-actions > li {
+    float: left;
+    margin: 5px 0;
+    color: rgba(95, 106, 141, 0.719);
+    text-align: center;
+  }
+
+  .ant-card#SystemCard .ant-card-actions > li > span > .anticon {
+    font-size: 25px;
+    line-height: 22px;
+  }
+  
+  .ant-card#SystemCard .ant-card-actions > li:not(:last-child) {
+    border-right: 2px solid #4e476bc7;    
+  }
+ 

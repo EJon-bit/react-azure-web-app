@@ -1,5 +1,6 @@
 .ant-card{
     margin-bottom: 50px;
+    
 }
 
 .ant-card#attachments{
@@ -45,7 +46,7 @@
     color: rgba(210, 209, 223, 0.637);
   }
 
-  .ant-card-actions {
+  .ant-card#attachments .ant-card-actions{
     margin: 0;
     padding: 0;
     list-style: none;
@@ -56,18 +57,18 @@
     border-radius: 0px 0px 8px 8px ;
   }
 
-  .ant-card-actions > li {
+  .ant-card#attachments .ant-card-actions > li {
     float: left;
     margin: 12px 0;
     color: rgba(66, 75, 102, 0.521);
     text-align: center;
   }
 
-  .ant-card-actions > li > span > .anticon {
+  .ant-card#attachments .ant-card-actions > li > span > .anticon {
     font-size: 20px;
     line-height: 22px;
   }
-  .ant-card-actions > li:not(:last-child) {
+  .ant-card#attachments .ant-card-actions > li:not(:last-child) {
     border-right: 2px solid #4e476bc7;
   }
 
@@ -89,4 +90,20 @@
   color: rgba(97, 111, 156, 0.521);
   border-color: #d9d9d9;
   cursor: not-allowed;
+}
+
+.ant-drawer-title {
+  margin: 0;
+  color: rgba(212, 209, 209, 0.85);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+}
+.ant-drawer-content {
+  position: relative;
+  z-index: 1;
+  overflow: auto;
+  background-color: rgba(22, 28, 44, 0.925);
+  background-clip: padding-box;
+  border: 0;
 }

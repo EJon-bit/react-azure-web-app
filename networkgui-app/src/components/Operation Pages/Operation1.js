@@ -1,6 +1,6 @@
 import React from 'react';
 import 'antd/dist/antd.css';
-import '../../cssComponents/operations.css'
+//import '../../cssComponents/operations.css'
 
 import Operation from './Sub Op Components/Operation';
 

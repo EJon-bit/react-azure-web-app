@@ -1,6 +1,6 @@
 import React from 'react';
 import 'antd/dist/antd.css';
-import '../cssComponents/Notifications.css'
+import '../cssComponents/Notifications.scoped.css'
 import {Alert, Card, Row, Col, Popconfirm, Button} from 'antd';
 
 class Notifications extends React.Component{
