@@ -12,19 +12,19 @@ class PopularLinks extends React.Component{
                     <Row gutter={30}>
                         <Col flex={5}> 
                             <Card id="AppCard" title="App Name">
-                                Value
+                                Link
                             </Card>
                         </Col>
 
                         <Col flex={5}> 
                             <Card id="AppCard" title="App Name">
-                                Value
+                                Link
                             </Card>
                         </Col>
 
                         <Col flex={5}> 
                             <Card id="AppCard" title="App Name">
-                                Value
+                                Link
                             </Card>
                         </Col>
                     </Row>                   
