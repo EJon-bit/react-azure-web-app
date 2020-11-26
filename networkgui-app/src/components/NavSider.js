@@ -3,6 +3,9 @@ import {NavLink} from 'react-router-dom';
 import '../../node_modules/antd/dist/antd.css';
 import '../cssComponents/Sider.css';
 import {Layout, Input, Menu, Badge} from 'antd';
+
+
+
 import {
   DeploymentUnitOutlined,
   BellOutlined,
@@ -22,7 +25,8 @@ const onSearch = value => console.log(value);
 class SiderNav extends React.Component {
   state = {
     collapsed: false,
-    };
+    
+  };
 
   onCollapse = collapsed => {
     console.log(collapsed);
@@ -30,8 +34,17 @@ class SiderNav extends React.Component {
   };
 
   
+  
 
   render() {
+    
+    var navOpsList= this.props.transOps.map((op, index)=>{
+        return(
+          <Menu.Item key={`Op- ${index}`}> <NavLink to={`/${op}`}>{op}</NavLink> </Menu.Item>
+        );
+    });
+
+    
     const { collapsed } = this.state;
     return (      
         <Sider collapsible collapsed={collapsed} onCollapse={this.onCollapse}>
@@ -47,11 +60,7 @@ class SiderNav extends React.Component {
             </Menu.Item>
 
             <SubMenu key="sub1" icon={<BuildOutlined style={{fontSize:'20px'}}/>} title="Available Operations">
-              <Menu.Item key="2"> <NavLink to="/operation1">Operation 1</NavLink> </Menu.Item>
-              <Menu.Item key="3"> Operation 2</Menu.Item>
-              <Menu.Item key="4">Operation 3</Menu.Item>
-              {/* <Menu.Item key="5">Submitted Jobs</Menu.Item>
-              <Menu.Item key="5">Current Jobs</Menu.Item> */}
+              {navOpsList}
             </SubMenu>
 
             <Menu.Item key="5" icon={<LinkOutlined style={{fontSize:'20px'}}/>}>
@@ -80,4 +89,6 @@ class SiderNav extends React.Component {
     );
   }
 }
-export default SiderNav
+
+export default SiderNav;
+

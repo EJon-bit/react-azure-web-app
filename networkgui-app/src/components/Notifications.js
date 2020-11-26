@@ -4,58 +4,89 @@ import '../cssComponents/Notifications.scoped.css'
 import {Alert, Card, Row, Col, Popconfirm, Button} from 'antd';
 
 class Notifications extends React.Component{
-
+    
     state={
-        visible:false,
-        setVisible:false,
+        visible:false,      
         confirmLoading:false,
-        setConfirmLoading:false
-    }     
+        snmpAlerts:[
+            {
+                alertType:"error",
+                source:"AIR",
+                message:"This Device is experiencing issues",
+            },
+            {
+                alertType:"success",
+                source:"HLR",
+                message:"This alert was successfully formed",
+            }
+        ],
+        generalNotices:[
+            {                
+                alertType:"info",
+                source: "Database Add", 
+                message:"Something was jus changed",
+            },
+            {
+                alertType:"info",
+                source: "Database Delete",
+                message:"Something was deleted",
+            }
+        
+        ]        
+    }       
 
-    showPopconfirm = () => {
-        this.setState({setVisible:true});
+    showPopconfirm = visible => {
+        this.setState({visible});
     };
 
-    handleOk = () => {
-        this.setState({setConfirmLoading:true});
+    handleOk = confirmLoading => {
+        this.setState({confirmLoading});
         setTimeout(() => {
-            this.setState({setVisible:false});
-            this.setState({setConfirmLoading:false});
+            this.setState({visible:false});
+            this.setState({confirmLoading:false});
         }, 2000);
     };
 
     handleCancel = () => {
         console.log('Clicked cancel button');
-        this.setState({setVisible:false});
+        this.setState({visible:false});
     };
 
     render(){
+
+        var snmpAlertDisplay= this.state.snmpAlerts.map((alert, index) =>{
+            return(
+                <Alert
+                    key={`Alert-${index}`}
+                    message={alert.source}
+                    description={alert.message}
+                    type={alert.alertType}
+                    showIcon/>
+            );
+        });
+
+        var noticeDisplay= this.state.generalNotices.map((notice, index) =>{
+            return(
+                <Alert
+                    key={`Notice-${index}`}
+                    message={notice.source}
+                    description={notice.message}
+                    type={notice.alertType}
+                    showIcon/>
+            );
+        });
+        
         return(
             <div>
                 <Card title="SNMP Alerts">
                     <Row>
                         <Col flex={5}>                        
-                            <Alert
-                                message="Informational Notes"
-                                description="Additional description and information about copywriting."
-                                type="info"
-                                showIcon/>
-                            <Alert
-                                message="Warning"
-                                description="This is a warning notice about copywriting."
-                                type="warning"
-                                showIcon
-                                closable/>
-                            <Alert
-                                message="Error"
-                                description="This is an error message about copywriting."
-                                type="error"
-                                showIcon/>                     
+                            {snmpAlertDisplay}                   
                         </Col>
                     </Row>    
                     <Row id="buttonRow">
-                        <Popconfirm
-                            title="Title"
+                        <Popconfirm id="popConfirm"
+                            title="Are you Sure?"
                             placement="left"
                             visible={this.state.visible}
                             onConfirm={this.handleOk}
@@ -71,22 +102,7 @@ class Notifications extends React.Component{
                 <Card title="General Notifications">                  
                     <Row gutter={[24,24]}>
                         <Col flex={5}>                        
-                        <Alert
-                                message="Informational Notes"
-                                description="Additional description and information about copywriting."
-                                type="info"
-                                showIcon/>
-                            <Alert
-                                message="Warning"
-                                description="This is a warning notice about copywriting."
-                                type="warning"
-                                showIcon
-                                closable/>
-                            <Alert
-                                message="Error"
-                                description="This is an error message about copywriting."
-                                type="error"
-                                showIcon/>                             
+                            {noticeDisplay}                          
                         </Col>
                     </Row>   
                 </Card>

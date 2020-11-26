@@ -4,28 +4,31 @@ import {Card, Col, Row} from 'antd';
 import '../../cssComponents/CurrentJobs.scoped.css'
 
 class CurrentJobs extends React.Component{
+    state={
+        jobs:[
+            {
+                name:"Job 1",
+                description:"ifjvin nyugy",
+            }
+        ]
+    }
     render(){
+        var displayJobs= this.state.jobs.map((job, index)=>{
+            return(
+                <Col key={`jobCol-${index}`} span={24}> 
+                    <Card id="JobCard" title={job.name}>
+                        {job.description}
+                    </Card>
+                </Col>
+            );
+        });
+
+        
         return(
             <div>
                 <Card>
                     <Row gutter={[24,10]}>
-                        <Col span={24}> 
-                            <Card id="JobCard" title="Job 1">
-                                Value
-                            </Card>
-                        </Col>
-
-                        <Col span={24}> 
-                            <Card id="JobCard" title="Job 2">
-                                Value
-                            </Card>
-                        </Col>
-
-                        <Col span={24}> 
-                            <Card id="JobCard" title="Job 3">
-                                Value
-                            </Card>
-                        </Col>
+                        {displayJobs}
                     </Row>                   
                 </Card>
             </div>

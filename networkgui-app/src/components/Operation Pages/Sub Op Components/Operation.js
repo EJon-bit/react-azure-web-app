@@ -6,11 +6,33 @@ import ActivityTable from './ActivityTable'
 import {Card, Drawer} from 'antd';
 import { EditOutlined, EllipsisOutlined, SettingOutlined } from '@ant-design/icons';
 
+
 const { Meta } = Card;
 
 class Operation extends React.Component{
-    state = { visible: false };
+    state = { 
+        visible: false,
+        opName:this.props.opPath,
+        attachments:[
+            {
+                name:"File Name",
+                Description:"sauihfjcm",
+                content:"iuiujm",
+            },
+            {
+                name:"File Name",
+                Description:"sauihfjcm",
+                content:"iuiujm",
+            },
+            {
+                name:"File Name",
+                Description:"sauihfjcm",
+                content:"iuiujm",
+            }
 
+        ]     
+    };
+    
     showDrawer = () => {
         this.setState({
         visible: true,
@@ -22,48 +44,34 @@ class Operation extends React.Component{
         visible: false,
         });
     };
+    
+    
 
     render(){
+        var showFiles=this.state.attachments.map((attachment, index) =>{
+            return(
+                <Col key={`attach-${index}`} flex={5}>                        
+                    <Card id="attachments"                                                           
+                        actions={[                                   
+                            <SettingOutlined onClick={this.showDrawer} key="setting" />,                                                                       
+                            <EditOutlined onClick={this.showDrawer} key="edit" />,                                                  
+                            <EllipsisOutlined onClick={this.showDrawer} key="ellipsis" />                                                                   
+                        ]}>
+                        <Meta                            
+                            title={attachment.name}
+                            description={attachment.description}/>
+                    </Card>                     
+                </Col>
+            );
+        
+        });    
+
+
         return(
             <div>
                 <Card title="Related Files for Upload">
-                    <Row gutter={35}>
-                        <Col flex={5}>                        
-                            <Card id="attachments"                                                          
-                                actions={[                                   
-                                    <SettingOutlined onClick={this.showDrawer} key="setting" />,                                                                       
-                                    <EditOutlined onClick={this.showDrawer} key="edit" />,                                                  
-                                    <EllipsisOutlined onClick={this.showDrawer} key="ellipsis" />                                                                   
-                                ]}>
-                                <Meta                            
-                                title="File Name"
-                                description="File description"/>
-                            </Card>                     
-                        </Col>
-                        <Col flex={5}>                        
-                            <Card id="attachments"                                                          
-                                actions={[
-                                <SettingOutlined key="setting" />,
-                                <EditOutlined key="edit" />,
-                                <EllipsisOutlined key="ellipsis" />,
-                                ]}>
-                                <Meta                            
-                                title="File Name"
-                                description="File description"/>
-                            </Card>                     
-                        </Col>
-                        <Col flex={5}>                        
-                            <Card id="attachments"                                                          
-                                actions={[
-                                <SettingOutlined key="setting" />,
-                                <EditOutlined key="edit" />,
-                                <EllipsisOutlined key="ellipsis" />,
-                                ]}>
-                                <Meta                            
-                                title="File Name"
-                                description="File description"/>
-                            </Card>                     
-                        </Col>
+                    <Row gutter={35}>                                      
+                        {showFiles}
                     </Row>    
                 </Card>
 

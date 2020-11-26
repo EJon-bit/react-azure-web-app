@@ -26,7 +26,7 @@
 }
 
 .ant-alert-success {
-    background-color: #e4f8d1a1;
+    background-color: #e4f8d1bb;
     border: 1px solid #b7eb8f; 
     color: #036931; 
 }
@@ -46,12 +46,16 @@ color: #3a3902;
 }
 
 .ant-alert-error {
-background-color: #f8ada19a;
-border: 1px solid #f89289;
-color: #3f0c03;
-
+    background-color: #f8ada19a;
+    border: 1px solid #f89289;
+    color: #3f0c03;
 }
 
 .ant-row#buttonRow> button{
     justify-content: center;
+}
+
+#popConfirm{
+    background-color: rgba(53, 52, 54, 0.829);
+    color: blanchedalmond;
 }
