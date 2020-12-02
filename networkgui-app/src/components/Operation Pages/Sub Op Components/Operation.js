@@ -16,17 +16,17 @@ class Operation extends React.Component{
         attachments:[
             {
                 name:"File Name",
-                Description:"sauihfjcm",
+                description:"sauihfjcm",
                 content:"iuiujm",
             },
             {
                 name:"File Name",
-                Description:"sauihfjcm",
+                description:"sauihfjcm",
                 content:"iuiujm",
             },
             {
                 name:"File Name",
-                Description:"sauihfjcm",
+                description:"sauihfjcm",
                 content:"iuiujm",
             }
 

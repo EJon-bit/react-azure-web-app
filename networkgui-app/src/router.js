@@ -18,11 +18,10 @@ class Routes extends React.Component{
     render(){
 
         var opRoutes= this.props.transOps;
-        console.log(opRoutes)
-        
-        opRoutes =opRoutes.map((op)=>{
+              
+        opRoutes =opRoutes.map((op, index)=>{
             return(
-                <Route path={`/${op}`} component={Operation1}/>
+                <Route key={`op-${index}`} path={`/${op}`} component={Operation1}/>
             );            
         });
 
