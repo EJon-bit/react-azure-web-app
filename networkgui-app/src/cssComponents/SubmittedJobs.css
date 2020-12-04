@@ -1,0 +1,32 @@
+.ant-card#subJobCard{
+    background-color: rgba(67, 67, 68, 0.808);
+    color: cornflowerblue;
+}
+
+.ant-card#subJobCard .ant-card-actions{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background: rgb(45, 51, 71);
+    border-top: 1px solid #1c212c;
+    /* border-bottom: 1px solid #1c212c;
+    border-left: 2px solid #1c212c; */
+    border-radius: 0px 0px 8px 8px ;
+  }
+
+.ant-card#subJobCard .ant-card-actions > li {
+    float: left;
+    margin: 12px 0;
+    color: rgba(66, 75, 102, 0.521);
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.ant-card#subJobCard .ant-card-actions > li > span > .anticon {
+    font-size: 20px;
+    line-height: 22px;
+}
+.ant-card#subJobCard .ant-card-actions > li:not(:last-child) {
+    border-right: 2px solid #4e476bc7;
+}

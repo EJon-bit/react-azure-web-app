@@ -5,7 +5,7 @@ import SiderNav from './components/NavSider';
 import { BrowserRouter as Router } from 'react-router-dom';
 import {Layout} from 'antd';
 
-const {Header}= Layout;
+const {Header, Content}= Layout;
 
 class App extends React.Component {
 
@@ -19,13 +19,15 @@ class App extends React.Component {
         <div className="App">
           <Layout id='appContainer'>            
             <SiderNav transOps={this.state.operations}/>
-            <Layout className="site-layout">
-              <Header>
+            <Layout id="contentLayout" className="site-layout">
+              <Header id='appHead'>
                 
               </Header>
-              <div id='routesContainer'>
-                <Routes transOps={this.state.operations}/>
-              </div>                 
+              <Content id='routesContainer'>
+                <div>
+                  <Routes transOps={this.state.operations}/>
+                </div>   
+              </Content>                            
             </Layout>            
           </Layout>
         </div>

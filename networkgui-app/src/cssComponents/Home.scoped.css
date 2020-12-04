@@ -37,12 +37,15 @@
     margin: 5px 0;
     color: rgba(95, 106, 141, 0.719);
     text-align: center;
+    font-size: 50px;
+    font-weight: bold;
   }
 
-  .ant-card#SystemCard .ant-card-actions > li > span > .anticon {
+  /* .ant-card#SystemCard .ant-card-actions > li > span > {
     font-size: 25px;
     line-height: 22px;
-  }
+    font-weight: bold;
+  } */
   
   .ant-card#SystemCard .ant-card-actions > li:not(:last-child) {
     border-right: 2px solid #4e476bc7;    

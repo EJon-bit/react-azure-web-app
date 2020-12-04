@@ -1,44 +1,71 @@
 import { Card, Col, Row } from 'antd';
-import {EllipsisOutlined} from '@ant-design/icons'
+//import {EllipsisOutlined} from '@ant-design/icons'
 import React from 'react';
 import '../../node_modules/antd/dist/antd.css';
 import '../cssComponents/Home.scoped.css'
+//import Operation from 'antd/lib/transfer/operation';
 
 
 class HomePage extends React.Component{
+
+    state={
+        systems:[
+            {
+                name:"EMA",
+                operations:["Sub Disconnects","Sub Loading","Sub Management"],
+                description:"luhluihi",
+                currentJobCount:3,
+            },
+            {
+                name:"MINSAT",
+                operations:["Sub Disconnects","Sub Loading","Sub Management"],
+                description:"iuoyyurdyt",
+                currentJobCount:4,
+            },
+            {
+                name:"AF",
+                operations:["Sub Disconnects","Sub Loading","Sub Management"],
+                description:"yurdk",
+                currentJobCount:4,
+            },
+            {
+                name:"AUC",
+                operations:["Sub Disconnects","Sub Loading","Sub Management"],
+                description:"yufdl",
+                currentJobCount:4,
+            }
+        ]
+    }
+
+    
+
     render(){
+        var displaySys=this.state.systems.map(system=>{
+            return(
+                <Col key={`System ${system}`} span={8}> 
+                    <Card  id="SystemCard" title={system.name} 
+                        actions={[
+                            <p>{system.currentJobCount}</p>,                                      
+                            <p>{system.description}</p>                                                                  
+                        ]}>
+                        {system.operations.map(op => 
+                            (
+                                <Col key={`${op}`} flex={5}>
+                                    <Card id="opCard">
+                                        {op}
+                                    </Card>                            
+                                </Col>  
+                            )
+                        )};                                          
+                    </Card>
+                </Col>
+            )
+        })
         return(
             <div>
-                <Card title="Frequently Visited Network Apps">
+                <Card title="Network Nodes">
                     <Row gutter={30}>
-                        <Col flex={5}> 
-                            <Card id="SystemCard" title="System A" 
-                                actions={[
-                                    <EllipsisOutlined onClick={this.showDrawer} key="ellipsis" />,                                      
-                                    <p>Description</p>                                                                  
-                                ]}>
-                                <Col flex={5}>
-                                    <Card id="opCard">
-                                        Operation 1
-                                    </Card>
-                                    <Card id="opCard">
-                                        Operation 2
-                                    </Card>
-                                </Col>                                
-                            </Card>
-                        </Col>
-
-                        <Col flex={5}> 
-                            <Card id="SystemCard" title="System B">
-                                Link
-                            </Card>
-                        </Col>
-
-                        <Col flex={5}> 
-                            <Card id="SystemCard" title="System C">
-                                Link
-                            </Card>
-                        </Col>
+                        {displaySys}                        
                     </Row>                   
                 </Card>
             </div>

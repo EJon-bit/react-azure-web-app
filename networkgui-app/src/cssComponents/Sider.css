@@ -11,7 +11,10 @@
   }
    
   .ant-layout-sider {    
-    background: rgba(25, 25, 43, 0.966);;    
+    background: rgba(25, 25, 43, 0.966);
+    position: fixed; 
+    overflow: auto;
+    height: 100vh; 
   }
 
   .ant-menu-dark.ant-menu-dark:not(.ant-menu-horizontal){

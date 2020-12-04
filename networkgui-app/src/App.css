@@ -38,20 +38,32 @@
   }
 }
 
-
+#appHead{
+  position: fixed;
+  width: 100%;
+  z-index: 1;    
+}
 .ant-layout#appContainer{
   min-height: 100vh;
 }
-.site-layout>div#routesContainer{  
+
+.site-layout#contentLayout{
+  margin-left: 200px;
+}
+#routesContainer{  
   min-height: 100vh; 
-  padding-top: 24px;
+  padding-top: 50px;
   padding-left: 50px;
   padding-right: 50px;
   background-color: rgba(28, 30, 43, 0.795);
   background-image: url(./Images/background2.png); 
   background-repeat: no-repeat;
   background-size: 100%;
- 
+   
+}
+
+#routesContainer>div{
+  margin-top: 5%;
 }
 
 .site-layout .site-layout-background {
